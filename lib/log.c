@@ -1,4 +1,9 @@
+#include <stdarg.h>
+#include <syslog.h>
+
 #include "common.h"
+
+#define MAXLINE 4096
 
 /* error - print a diagnostic and optionally exit */
 void error(int status, int err, char *fmt, ...) {
